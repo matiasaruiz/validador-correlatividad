@@ -1,4 +1,5 @@
-package main.entidades
+package entidades;
+
 
 
 import lombok.Getter;
@@ -44,6 +45,6 @@ public class Alumno {
     }
 
     public boolean cumpleCorrelativasParaCursar(Materia unaMateria) {
-        return unaMateria.getCorrelativas().stream().allMatch(this::tenesAprobada);
+        return unaMateria.getCorrelativas().stream().allMatch(this::estaAprobada);
     }
 }

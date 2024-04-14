@@ -1,3 +1,5 @@
+package entidades;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,7 +18,7 @@ public class Materia{
 
     @Setter
     @Getter
-    private idMateria;
+    private String idMateria;
 
     @Getter
     private List<Materia> correlativas;

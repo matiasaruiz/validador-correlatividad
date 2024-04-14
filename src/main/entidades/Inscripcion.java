@@ -1,5 +1,6 @@
-import lombok.Getter;
-import lombok.Setter;
+package entidades;
+
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -25,6 +26,6 @@ public class Inscripcion {
     }
 
     public boolean estaAprobada() {
-        return this.materias.stream().allMatch(m -> this.alumno.cumplisCorrelativasParaCursar(m));
+        return this.materias.stream().allMatch(m -> this.alumno.cumpleCorrelativasParaCursar(m));
     }
 }
